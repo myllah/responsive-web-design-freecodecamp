@@ -4,9 +4,14 @@
 <head>
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		document.getElementById("year").innerHTML = new Date().getFullYear();
+	</script>
+	<script src="https://use.fontawesome.com/6c54b90214.js"></script>
 </head>
 
 <body>
+
 	<header id='main'>
 		<div id='img-div'>
 			<img id='image' src='https://64.media.tumblr.com/tumblr_m9w3ixY1cK1ro2iuao1_400.gif'
@@ -227,10 +232,32 @@
 	<hr>
 	<br>
 	<footer>
+		<p>Thank you for reading this. Read more about Patrick Jane's life <a id='tribute-link'
+				href='https://thementalist.fandom.com/wiki/Patrick_Jane' target="_blank"
+				alt="https://thementalist.fandom.com/wiki/Patrick_Jane"
+				title="https://thementalist.fandom.com/wiki/Patrick_Jane">here</a></p>
 		<img src="https://64.media.tumblr.com/fa1e0a11f2870678b6a2fbfedf231d4f/tumblr_n73p3al1MA1smcbm7o1_500.gif">
 		<br>
-		<p>Thank you for reading this. Read more about Patrick Jane's life <a id='tribute-link'
-				href='https://thementalist.fandom.com/wiki/Patrick_Jane' target="_blank">here</a></p>
+		<div class="contact">
+		</div>
+		<p>This is the project <strong>Tribute Page</strong> in the <a
+				href="https://www.freecodecamp.org/learn/responsive-web-design" target='_blank'>Responsive Web Design
+				Course</a> from <a href="https://www.freecodecamp.org/" target='_blank'>freecodecamp.org</a></p>
+
+		<a href="https://github.com/myllah" target="_blank" alt="github" title='github'>
+			<span class="icon"><i class="fa fa-github"></i></span></a>
+
+		<a href="https://codepen.io/myllah/" target="_blank" alt="codepen" title='codepen'>
+			<span class="icon"><i class="fa fa-codepen"></i></span></a>
+
+		<a href="https://www.freecodecamp.org/myllah/" target="_blank" alt="freecodecamp" title='freecodecamp'>
+			<span class="icon"><i class="fa fa-free-code-camp"></i></span></a>
+
+		<a href="https://www.linkedin.com/in/mylenapires/" target="_blank" alt="linkedin" title='linkedin'>
+			<span class="icon"><i class="fa fa-linkedin"></i></span></a>
+
+		<br>
+		<small>&copy; Copyright <span id="year"></span>, myllah</small>
 	</footer>
 </body>
 
