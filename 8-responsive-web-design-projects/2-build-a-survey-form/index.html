@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://use.fontawesome.com/6c54b90214.js"></script>
+  <title>The Mentalist Survey</title>
+</head>
+
+<body>
+  <header>
+    <h1 id='title'>Welcome to The Mentalist survey</h1>
+    <p id='description'>Tell us about your experience watching The Mentalist</p>
+  </header>
+
+  <main>
+    <div id='container'>
+      <form id="survey-form">
+        <fieldset>
+          <label for="name" id='name-label'>
+            Name
+            <span id="required">*<span>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="email" id="email-label">
+            Email
+            <span id="required">*<span>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="number" id='number-label'>
+            Age
+            <span id="required">*<span>
+                <input type="number" id="number" name="number" placeholder="Enter your age" required min=1 max=150 />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="dropdown-season">
+            Up to which season have you watched? <span id="required">*<span>
+                <select id="dropdown" name="dropdown-season">
+                  <option value="have-not-started-yet" selected>I haven't started yet</option>
+                  <option value="season-1">Season 1 (2008–09)</option>
+                  <option value="season-2">Season 2 (2009–10)</option>
+                  <option value="season-3">Season 3 (2010–11)</option>
+                  <option value="season-4">Season 4 (2011–12)</option>
+                  <option value="season-5">Season 5 (2012–13)</option>
+                  <option value="season-6">Season 6 (2013–14)</option>
+                  <option value="season-7">Season 7 (2014–15)</option>
+                </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <div class="labels">
+            How likely is that you would recommend The Mentalist to a friend?
+            <span id="required">*<span>
+          </div>
+          <label class="lighter">
+            <input type="radio" name="survey-form-gender" value="definitely" checked /> Definitely
+          </label>
+          <label class="lighter">
+            <input type="radio" name="survey-form-gender" value="maybe" /> Maybe
+          </label>
+          <label class="lighter">
+            <input type="radio" name="survey-form-gender" value="notSure" /> Not sure
+          </label>
+        </fieldset>
+
+        <fieldset class='lighter'>
+          <div class="labels bolder">
+            If you haven't found out who Red John is yet, who do you think he is? (You can choose more than one)
+          </div>
+
+          <label for="survey-form-red-john">
+            <input type="checkbox" value="i-already-know">
+            I already know who he is
+          </label>
+
+          <label for="survey-form-red-john">
+            <input type="checkbox" value="patrick-jane">
+            Patrick Jane: Consultant to the California Bureau of Investigation and the mentalist
+          </label>
+
+          <label for="survey-form-red-john">
+            <input type="checkbox" value="brett-partridge">
+            Brett Partridge: CSI lead agent interested in the Red John killings
+          </label>
+
+          <label for="survey-form-red-john">
+            <input type="checkbox" value="cbi-ron">
+            CBI Ron: CBI Special Agent, who works, in some episodes, with Lisbon's team
+          </label>
+
+          <label for="survey-form-red-john">
+            <input type="checkbox" value="bob-kirkland">
+            Bob Kirkland: Homeland Security and agent on the Red John case
+          </label>
+
+          <label for="survey-form-red-john">
+            <input type="checkbox" value="j-j-laroche">
+            J.J. LaRoche: Head of CBI Internal Affairs, and after became CBI chief
+          </label>
+
+          <label for="survey-form-red-john">
+            <input type="checkbox" value="raymond-haffner">
+            Raymond Haffner: CBI Senior agent and cult member
+          </label>
+
+          <label for="survey-form-red-john">
+            <input type="checkbox" value="bret-stiles">
+            Bret Stiles: Leader of the Visualize cult
+          </label>
+
+          <label for="survey-form-red-john">
+            <input type="checkbox" value="teresa-lisbon">
+            Teresa Lisbon: Senior agent and leader of the "Serious Crimes Unit" for the CBI
+          </label>
+
+          <label for="survey-form-red-john">
+            <input type="checkbox" value="virgil-minelli">
+            Virgil Minelli: CBI Special Agent, former Director of the CBI
+          </label>
+
+          <label for="survey-form-red-john">
+            <input type="checkbox" value="gale-bertram">
+            Gale Bertram: Director of Law Enforcement
+          </label>
+
+          <label for="survey-form-red-john">
+            <input type="checkbox" value="xerife-mcallister">
+            Sheriff McAllister: Sheriff of Napa County
+          </label>
+
+          <label for="survey-form-red-john">
+            <input type="checkbox" value="reede-smith">
+            Reede Smith: FBI Special Agent
+          </label>
+
+          <label for="survey-form-red-john">
+            <input type="checkbox" value="none-of-them">
+            None of them
+          </label>
+
+        </fieldset>
+
+        <fieldset>
+          <label for="survey-form-suggestions">
+            Any Comments or Suggestions?
+            <textarea id="survey-form-suggestions" maxlength="200"></textarea>
+          </label>
+        </fieldset>
+
+        <button id="submit" type="submit" class="button">Submit the form</button>
+    </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>This is the project <strong>Build a Survey Form</strong> in the <a
+        href="https://www.freecodecamp.org/learn/responsive-web-design" target='_blank'>Responsive Web Design
+        Course</a> from <a href="https://www.freecodecamp.org/" target='_blank'>freecodecamp.org</a></p>
+
+    <a href="https://github.com/myllah" target="_blank" alt="github" title='github'>
+      <span class="icon"><i class="fa fa-github"></i></span></a>
+
+    <a href="https://codepen.io/myllah/" target="_blank" alt="codepen" title='codepen'>
+      <span class="icon"><i class="fa fa-codepen"></i></span></a>
+
+    <a href="https://www.freecodecamp.org/myllah/" target="_blank" alt="freecodecamp" title='freecodecamp'>
+      <span class="icon"><i class="fa fa-free-code-camp"></i></span></a>
+
+    <a href="https://www.linkedin.com/in/mylenapires/" target="_blank" alt="linkedin" title='linkedin'>
+      <span class="icon"><i class="fa fa-linkedin"></i></span></a>
+    <br>
+    <small>&copy; Copyright <span id="year"></span>, myllah</small>
+  </footer>
+</body>
+
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+</html>
