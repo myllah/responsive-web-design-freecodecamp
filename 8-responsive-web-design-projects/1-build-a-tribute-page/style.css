@@ -66,6 +66,12 @@ h3 {
 	text-align: center;
 }
 
+@media (max-width : 400px){
+	#image {
+	width: -webkit-fill-available;
+	}
+}
+
 /** Fim - Imagem Principal **/
 
 /** Início - Titulo Principal **/
