@@ -1,0 +1,300 @@
+:root {
+	--black: #203c18; /*Cores dos títulos, menu, ícones e links*/
+	--letters: #0f190b; /*Cores das letras do site*/
+	--page-green: linear-gradient(
+		to bottom right,
+		#cbe5c4,
+		#dae7d6,
+		#cce1d7,
+		#dae7d6
+	); /*Cor da página*/
+	--menu-green: linear-gradient(
+		to top,
+		#92bc8b,
+		#afdba8,
+		#92bc8b
+	); /*Cor do menu*/
+}
+
+body {
+	background-image: var(--page-green);
+	color: var(--letters);
+	font-family: "Open Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/** Início - Header **/
+#header {
+	position: sticky;
+	top: -1px;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 1%;
+	background-image: var(--menu-green);
+	border-bottom: 2px solid #92bc8b;
+}
+
+/* Logo */
+.logo {
+	margin: 5px;
+	float: left;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+section h2 {
+	font-family: "Courgette", cursive;
+}
+
+#responsive-menu,
+.responsive-menu {
+	display: none;
+	margin: 0;
+	float: right;
+	padding: 10px;
+	text-align: center;
+	margin: 5px;
+}
+.responsive-menu:hover {
+	color: #be2590;
+}
+
+/* Menu */
+.menu {
+	font-weight: bold;
+}
+
+.menu-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.nav-link {
+	color: var(--black);
+	display: inline-block;
+	letter-spacing: 2px;
+	margin: 0 2%;
+	padding: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+	#header {
+		display: inline-block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.menu {
+		display: none;
+		font-size: 1.2em;
+	}
+	#responsive-menu:checked ~ .menu {
+		display: flex;
+		flex-direction: column;
+		margin-top: 10px;
+	}
+
+	.responsive-menu {
+		display: block;
+		font-size: 2em;
+		color: var(--black);
+	}
+	.menu-list {
+		display: block;
+	}
+	.menu-list li {
+		text-align: center;
+	}
+}
+/** Fim - Header **/
+
+a {
+	color: var(--black);
+	text-decoration: none;
+}
+
+a:hover {
+	color: #be2590;
+}
+
+ul {
+	list-style: none;
+}
+
+/** Início - footer **/
+footer {
+	text-align: center;
+	font-size: 16px;
+	margin: 2%;
+}
+
+footer a {
+	text-decoration: none;
+	font-weight: bold;
+	color: var(--black);
+}
+
+footer a:hover {
+	color: #be2590;
+}
+
+footer .icon {
+	margin: 0.3em;
+	font-size: 2em;
+}
+
+footer img {
+	max-width: 30%;
+}
+
+@media (max-width: 700px) {
+	footer img {
+		max-width: 70%;
+	}
+}
+/** Fim - footer **/
+
+#about,
+#products,
+#contact,
+#section-video {
+	margin: 50px;
+	text-align: center;
+}
+
+#about h2,
+#products h2,
+#contact h2 {
+	text-align: center;
+	color: var(--black);
+}
+
+/** Products **/
+
+#products .container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	text-align: center;
+	padding: 15px;
+}
+
+#products .container .each-product i {
+	font-size: 4em;
+	margin: 10px;
+	color: var(--black);
+}
+
+@media (max-width: 700px) {
+	#products .container {
+		display: inline;
+		width: 100%;
+		margin: 0;
+	}
+}
+
+/** Contact **/
+
+#contact fieldset {
+	border: none;
+}
+
+#contact {
+	background-color: rgba(40, 83, 99, 0.13);
+	border-radius: 20px;
+	padding: 1em;
+}
+
+#contact label {
+	letter-spacing: 1.5px;
+	font-size: 1.1em;
+}
+
+#contact input,
+#contact select {
+	margin-top: 1.5%;
+	padding: 0 0 10px 0;
+	background: transparent;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+#contact input {
+	border: none;
+	border-bottom: 2px solid #92bc8b !important;
+}
+
+#contact #submit {
+	width: 100%;
+	margin: 3% 0 0 0;
+	padding: 10px;
+	height: 2.5em;
+	text-transform: uppercase;
+	border-radius: 20px;
+	font-weight: bolder;
+	color: white;
+	background-color: #92bc8b;
+}
+
+#contact #submit:hover {
+	background-color: #afdba8;
+	color: #fff;
+}
+
+#contact #form label #email {
+	width: 800px;
+}
+
+@media (max-width: 1000px) {
+	#contact #form label #email {
+		width: 600px;
+	}
+}
+@media (max-width: 900px) {
+	#section-video #video {
+		width: 600px;
+	}
+	#contact #form label #email {
+		width: 550px;
+	}
+}
+@media (max-width: 700px) {
+	#section-video #video {
+		width: 500px;
+	}
+	#contact #form label #email {
+		width: 450px;
+	}
+}
+
+@media (max-width: 600px) {
+	#section-video #video {
+		width: 350px;
+	}
+	#contact #form label #email {
+		width: 300px;
+	}
+}
+
+@media (max-width: 450px) {
+	#section-video #video {
+		width: 200px;
+	}
+	#contact #form label #email {
+		width: 150px;
+	}
+}
+
+@media (max-width: 300px) {
+	#contact #form label #email {
+		width: 50px;
+	}
+}

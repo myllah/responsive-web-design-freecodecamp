@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/591f81ae5f.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Product Landing Page: Da_Roça</title>
+  </head>
+
+  <body>
+
+    <header id="header">
+        <img id="header-img" src="https://www.onlygfx.com/wp-content/uploads/2016/12/wine-stain-6.png" width="65px">
+    
+        <input type="checkbox" id="responsive-menu">
+        <label for="responsive-menu" class="responsive-menu">
+            <i class="fa fa-bars"></i>
+        </label>
+        <nav class="menu" id="nav-bar">
+            <ul class="menu-list">
+                <li><a class="nav-link" href="#about">Sobre</a></li>
+                <li><a class="nav-link" href="#products">Produtos</a></li>
+                <li><a class="nav-link" href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id='section-video'>
+            <h2>
+                <a href="#">
+                    <i class="fas fa-tree" id="header-img"></i>
+                    Licores Da_Roça
+                    <i class="fas fa-tree" id="header-img"></i>
+    
+                </a>
+            </h2>
+            <video id='video' width="800" autoplay muted loop>
+                <source src="https://static.videezy.com/system/resources/previews/000/039/398/original/17_032_01.mp4" type="video/mp4">
+            </video>
+    
+            <figcaption id='img-caption'>
+                <a rel="nofollow" href="http://videezy.com/" target="_blank" style="float:right">Filmagens de stock por Videezy!</a>
+            </figcaption>
+            </br>
+            <p>
+                Temos uma diversa variedade de licores. Tenho certeza que você vai amar!
+            </p>
+            <p>Os mais pedidos são:
+            <ul>
+                <li>Licor de Jabuticaba</li>
+                <li>Licor de Jenipapo</li>
+                <li>Licor de Amora</li>
+                <li>Licor de Chocolate</li>
+                <li>Licor de Café</li>
+            </ul>
+            </p>
+        </section>
+    
+        <section id="about">
+            <h2>
+                <a href="#">
+                    <i class="fas fa-tree" id="header-img"></i>
+                    Sobre
+                    <i class="fas fa-tree" id="header-img"></i>
+                </a>
+            </h2>
+            <p>Temos como missão fornecer alimentos naturais e artesanais de qualidade, de forma sustentável, livre de agrotóxicos e produtos químicos nocivos à saúde das pessoas e da natureza, além de mitigar os impactos da sociedade na natureza a um preço justo.</p>
+            <p>
+                Ainda estamos nos primeiros passos, produzindo e vendendo licores, cachaças e doces artesanais, mas estamos em uma forte ascensão investindo a fim de aumentar sua produção e variedade de produtos para suprimir a necessidade de todos os consumidores.
+            </p>
+        </section>
+    
+        <section id='products'>
+            <h2>
+                <a href="#">
+                    <i class="fas fa-tree" id="header-img"></i>
+                    Outros produtos
+                    <i class="fas fa-tree" id="header-img"></i>
+                </a>
+            </h2>
+            <div class="container">
+                <div class="each-product">
+                    <i class="fas fa-wine-glass-alt"></i>
+                    <p>
+                        Licores Artesanais
+                    </p>
+                </div>
+                <div class="each-product">
+                    <i class="fas fa-glass-whiskey"></i>
+                    <p>
+                        Cachaça Artesanal
+                    </p>
+                </div>
+                <div class="each-product">
+                    <i class="fas fa-cookie-bite"></i>
+                    <p>
+                        Doces Caseiros
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <p>
+                Venha experimentar os nossos licores!
+                Informe seu e-mail e entraremos em contato.
+            </p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <fieldset>
+                    <label for="email">Email:
+                        <input name="email" id="email" type="email" placeholder="Enter your e-mail" required />
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <input id="submit" type="submit" value="Enviar" class="btn" />
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="about">
+        </div>
+        <p>This is the project <strong>Product Landing Page</strong> in the <a href="https://www.freecodecamp.org/learn/responsive-web-design" target='_blank'>Responsive Web Design
+                Course</a> from <a href="https://www.freecodecamp.org/" target='_blank'>freecodecamp.org</a></p>
+    
+        <a href="https://github.com/myllah" target="_blank" alt="github" title='github'>
+            <span class="icon"><i class="fa fa-github"></i></span></a>
+    
+        <a href="https://codepen.io/myllah/" target="_blank" alt="codepen" title='codepen'>
+            <span class="icon"><i class="fa fa-codepen"></i></span></a>
+    
+        <a href="https://www.freecodecamp.org/myllah/" target="_blank" alt="freecodecamp" title='freecodecamp'>
+            <span class="icon"><i class="fa fa-free-code-camp"></i></span></a>
+    
+        <a href="https://www.linkedin.com/in/mylenapires/" target="_blank" alt="linkedin" title='linkedin'>
+            <span class="icon"><i class="fa fa-linkedin"></i></span></a>
+    
+        <br>
+        <small>&copy; Copyright <span id="year"></span>, myllah</small>
+    </footer>
+</body>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+
+
+</html>
