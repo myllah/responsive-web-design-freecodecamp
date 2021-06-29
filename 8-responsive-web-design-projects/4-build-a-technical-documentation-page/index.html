@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/591f81ae5f.js"></script>
+</head>
+
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header>PYTHON</header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Hello_world">Hello world</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Variables">Variables</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Data_Types">Data Types</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Reserved_Words">Reserved Words</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Indentation">Indentation</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Comments">Comments</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Conditions">Conditions</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Loops">Loops</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#References">References</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="content">
+            <section class="main-section" id="Hello_world">
+                <header>Hello world</header>
+                <p>We can use the the print statement to print out a line:</p>
+                <code>print("Hello World!")</code>
+                <p>When you see these code lines, copy them and paste on a online python compliler like
+                    <a href="https://www.onlinegdb.com/online_python_compiler">GDB Online</a> so you can se the outputs</p>
+                <p>Our first code! It was easy, wasn't it?</p>
+            </section>
+
+            <section class="main-section" id="Variables">
+                <header>Variables</header>
+                <p>In Python, you don't need to declare variables before using them. A variable is created the moment you first assign a
+                    value to it. </p>
+                <code>x = 3
+                    y = "Banana"
+                    print('x:', x)
+                    print('y:', y)
+                </code>
+                </br>
+                <p>We don't need to declare the varibles's type. Also, we are able to change the type, even after we already gave a value.</p>
+                <code>x = 3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="comment"># In this moment, the type of x is int</span>
+                    x = "Banana" &nbsp; &nbsp; <span class="comment"># And now we just changed the type of x to string</span>
+                    print(x)
+                </code>
+            </section>
+
+            <section class="main-section" id="Data_Types">
+                <header>Data Types</header>
+                <p>We can get the type of a variable with the type() function. This function returns the class type of the argument passed as
+                    parameter.</p>
+                <code>x = 3
+                    y = "Banana"
+                    print("type of x:", type(x))
+                    print("type of y:", type(y))
+                </code>
+                </br>
+                <p>We are able to specify the data type of a variable. This is called casting</p>
+                <code>x = str(32)
+                    y = int(32)
+                    z = float(32)
+        
+                    print('x:', x) &nbsp; <span class="comment"># x is '32' </span>
+                    print('y:', y) &nbsp; <span class="comment"># y is 32 </span>
+                    print('z:', z) &nbsp; <span class="comment"># z is 32.0 </span>
+                </code>
+                
+                <p>Python has five standard data types:</p>
+                <ul>
+                    <li>
+                        <h3>String</h3>
+                        <p>Strings in Python stores a set of characters, and we are able to access parts of the string:</p>
+                        <code>x = "Hello World"
+                            print(type(x))
+                                    
+                            print(x) &nbsp; <span class="comment"> # Prints the string x </span>
+                                    
+                            print(x[:5]) &nbsp; <span class="comment"> # Prints the string x until charactere 5 </span>
+                                    
+                            print(x*2) &nbsp; <span class="comment"> # Prints the string x twice </span>
+                        </code>
+                    </li>
+                
+                    <li>
+                        <h3>Numbers(int, float, complex)</h3>
+                        <p>Number data types store numeric values:</p>
+                        <code>num_int = 3
+                        print(type(num_int))
+                
+                        num_float = 5.0
+                        print(type(num_float))
+                
+                        num_complex = 2 + 3j
+                        print(type(num_complex))
+                    </code>
+                    </li>
+                
+                    <li>
+                        <h3>List</h3>
+                        <p>A list is a compound data type where you can group values together. Lists are very similar to arrays in C. One difference
+                            between them is that all the items belonging to a list can be of different data type.</p>
+                        <code>list = [ 'Banana', 'Grape', 'Apple', 'Orange' ]
+                        print(type(list))
+                
+                        print(list) &nbsp; <span class="comment"> # Prints the list </span>
+                        print(list[0]) &nbsp; <span class="comment"> # Prints first element of the list </span>
+                        print(list[2:]) &nbsp; <span class="comment"> # Prints elements starting from 3rd element </span>
+                        print(list*2) &nbsp; <span class="comment"> # Prints the list twice </span>
+                    </code>
+                    </li>
+                
+                    <li>
+                        <h3>Tuple</h3>
+                        <p>A tuple is a data type very similar to the list data type. As differences, we can notice that the tuples are enclosed
+                            in parenthsis, while the lists are enclosed in brackets. A tuple consists of a number of values separated by
+                            commas. Unlike lists, tuples does not support item assignment, meaning that they cannot be updated, that is why
+                            we considere the tuples as read-only lists</p>
+                        <code>tuple = ('Banana', 'Grape', 'Apple', 'Orange')
+                        print(type(tuple))
+                
+                        print(tuple) &nbsp; <span class="comment"> # Prints the list </span>
+                        print(tuple[0]) &nbsp; <span class="comment"> # Prints first element of the tuple </span>
+                        print(tuple[2:]) &nbsp; <span class="comment"> # Prints elements starting from 3rd element </span>
+                    </code>
+                    </li>
+                
+                    <li>
+                        <h3>Dictionary</h3>
+                        <p>Python's dictionaries are kind of hash table type:</p>
+                        <code>dict = {"name" : "Myllah", "age" : 20, "pets": ["Kyan", "Kaya"]}
+                
+                        print(dict) &nbsp; <span class="comment"> #Prints the dict </span>
+                        print(dict['name']) &nbsp; <span class="comment"> #Prints value for "name" key </span>
+                        print(dict['pets']) &nbsp; <span class="comment"> #Prints value for "pets" key </span>
+                        print(dict.keys()) &nbsp; <span class="comment"> # Prints all the keys </span>
+                        print(dict.values()) &nbsp; <span class="comment"> # Prints all the values </span>
+                    </code>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="main-section" id="Reserved_Words">
+                <header>Reserved Words</header>
+                <p>Python reserves a set of keywords that designates special language functionalities. These are reserved words, therefore we
+                    can't use them as a variable name, function name or any other identifier.</p>
+                <p>We can use the code below to see the reserved words:</p>
+                <code>import keyword
+                    print(keyword.kwlist)
+                </code>
+                <p>These were the returned words:
+                    </br>
+                    False, None, True, and, as, assert, break, class, continue, def, del, elif, else, except, finally, for, from, global, if,
+                    import, in, is, lambda, nonlocal, not, or, pass, raise, return, try, while, with, yield
+                </p>
+            </section>
+
+            <section class="main-section" id="Indentation">
+                <header>Indentation</header>
+                <p>Python does't provide braces to indicate blocks of code. We use indentation, and all statements with the same amount of of
+                    whitespace belong to the same block of code.</p>
+                <p>For example:</p>
+                <code>num = 1
+                    if num == 1:
+                    &nbsp; print("Number is 1")
+                    else:
+                    &nbsp; print("Number is NOT 1")
+                </code>
+            </section>
+
+            <section class="main-section" id="Comments">
+                <header>Comments</header>
+                <p>All characters after the # are comments and the Python interpreter ignores them.</p>
+                <code>num = 99
+                    <span class="comment"> #This is a comment </span>
+
+                    if num == 1: <span class="comment"> #This is a comment </span>
+                    &nbsp; print("Number is 1")
+                    &nbsp; <span class="comment"> #This is a comment </span>
+                    <span class="comment"> #This is also a comment ;) </span>
+                    else:
+                    &nbsp; print("Number isNOT 1")
+                </code>
+            </section>
+
+            <section class="main-section" id="Conditions">
+                <header>Conditions</header>
+                <p>Python uses boolean logic to evaluate expressions producing True or False as output.</p>
+                <p>We can use the if by itself:</p>
+                <code>num = 3
+                    if ( num == 3 ) : print("Num is 3")
+                    print("Good bye!")
+                </code>
+                
+                <p>We can use the if...else:</p>
+                <code>a = 5
+                    b = 99
+                    if b > a:
+                    &nbsp; print("b is greater than a")
+                    else:
+                    &nbsp; print("b is not greater than a")
+                </code>
+                
+                <p>Or we can use the nested statments if...elif...else:</p>
+                <code>num = 0
+                    if num == 1:
+                    &nbsp; print("Number is 1")
+                    elif num == 0:
+                    &nbsp; print('Number is 0')
+                    else:
+                    &nbsp; print("Number is NOT 0 and is NOT 1")
+                </code>
+            </section>
+
+            <section class="main-section" id="Loops">
+                <header>Loops</header>
+                <p>The lines of code are executed sequentially, but many situations requests to repeat the same block of code repetitively.
+                </p>
+                <h3>For</h3>
+                <p>The For loop iterates to each item in the list, until the end of the sequence:</p>
+                <code>fruits = ['banana', 'grape', 'mango', 'orange']
+                    for fruit in fruits:
+                    &nbsp; print('Current fruit :', fruit)
+                </code>
+                <h3>While</h3>
+                <p> The While loop iterates while the condition is true. The moment the condition becomes false, the loop stops, and it's executed
+                    the line immediately after the loop.</p>
+                <code>i = 10
+                    while i >= 1:
+                    &nbsp; print(i)
+                    &nbsp; i -= 1
+                </code>
+            </section>
+
+            <section class="main-section" id="References">
+                <header>References</header>
+                <p>
+                    <a href="https://www.geeksforgeeks.org/indentation-in-python/">https://www.geeksforgeeks.org/indentation-in-python/</a>
+                </p>
+                <p>
+                    <a href="https://www.tutorialspoint.com/python3/index.htm">https://www.tutorialspoint.com/python3/index.htm</a>
+                </p>
+                <p>
+                    <a href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial/</a>
+                </p>
+                <p>
+                    <a href="https://www.w3schools.com/python/">https://www.w3schools.com/python/</a>
+                </p>
+            </section>
+        </nav>
+
+        <footer class="footer">
+            <p>This is the project
+                <strong> Technical Documentation Page </strong> in the
+                <a href="https://www.freecodecamp.org/learn/responsive-web-design" target='_blank'> Responsive Web Design Course</a> from
+                <a href="https://www.freecodecamp.org/" target='_blank'>freecodecamp.org</a>
+            </p>
+
+            <a href="https://github.com/myllah" target="_blank" alt="github" title='github'>
+                <span class="icon">
+                    <i class="fa fa-github"></i>
+                </span>
+            </a>
+
+            <a href="https://codepen.io/myllah/" target="_blank" alt="codepen" title='codepen'>
+                <span class="icon">
+                    <i class="fa fa-codepen"></i>
+                </span>
+            </a>
+
+            <a href="https://www.freecodecamp.org/myllah/" target="_blank" alt="freecodecamp" title='freecodecamp'>
+                <span class="icon">
+                    <i class="fa fa-free-code-camp"></i>
+                </span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/mylenapires/" target="_blank" alt="linkedin" title='linkedin'>
+                <span class="icon">
+                    <i class="fa fa-linkedin"></i>
+                </span>
+            </a>
+
+            <br>
+            <small>&copy; Copyright
+                <span id="year"></span>, myllah</small>
+        </footer>
+    </main>
+</body>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+</html>

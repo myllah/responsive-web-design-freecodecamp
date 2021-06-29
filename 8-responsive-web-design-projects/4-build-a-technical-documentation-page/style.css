@@ -1,0 +1,155 @@
+:root {
+  --black: #13240f;
+  --pink: #be2590;
+  --background: linear-gradient(to right, #cccccc, #99cccc, #ccffcc);
+  --navbar: rgba(0, 22, 22, 0.4);
+  --comment: #3333ff;
+
+  background-image: var(--background);
+  font-size: 17px;
+}
+
+/** Início navbar **/
+#navbar {
+  background-color: var(--navbar);
+  grid-area: navbar;
+  position: fixed;
+  width: 200px;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  font-size: 21px;
+}
+#navbar header {
+  padding-top: 15px;
+  font-weight: 800;
+  color: var(--black);
+}
+#navbar ul {
+  overflow-y: auto;
+  height: 90%;
+  padding: 0;
+}
+#navbar li {
+  color: #cccccc;
+  border-top: 2px solid;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px;
+  color: var(--black);
+}
+/** Fim navbar **/
+
+.content {
+  grid-area: content;
+}
+
+#main-doc {
+  margin-top: 30px;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 200px auto;
+  grid-template-areas:
+    "navbar content"
+    "navbar footer";
+  gap: 0.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+  #main-doc {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 2fr 0.3fr;
+    grid-template-areas:
+      "navbar"
+      "content"
+      "footer";
+  }
+
+  #navbar {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+  }
+  #navbar ul {
+    height: 70%;
+  }
+}
+
+.main-section {
+  padding: 20px;
+}
+
+.main-section header {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+#navbar a:hover,
+a:hover {
+  color: var(--pink);
+}
+
+li {
+  list-style: none;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #dddd;
+  padding: 10px 30px 10px 30px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.comment {
+  color: var(--comment);
+}
+
+h3,
+header {
+  color: var(--black);
+}
+
+/** Início - footer **/
+footer {
+  text-align: center;
+  font-size: 16px;
+  grid-area: footer;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: var(--pink);
+}
+
+footer .icon {
+  margin: 0.3em;
+  font-size: 2em;
+}
+
+footer img {
+  max-width: 30%;
+}
+
+@media (max-width: 700px) {
+  footer img {
+    max-width: 70%;
+  }
+}
+/** Fim - footer **/
