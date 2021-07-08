@@ -26,9 +26,11 @@ See my solution for each project and its corresponding requeriments:
 * Survey Form: [Page](https://codepen.io/Myllah/full/dyNwbzm  "The Mentalist's Survey Form") | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form "Build a Survey Form")
 * Product Landing Page: [Page](https://codepen.io/Myllah/full/BaWJjea "Product Landing Page: DaRoça") | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page "Build a Product Landing Page")
 * Technical Documentation Page: [Page](https://codepen.io/Myllah/full/rNyEGQx "Technical Documentation Page: Python") | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page "Build a Technical Documentation Page")
-* Personal Portfolio: [Page](#) | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage "Build a Personal Portfolio Webpage")
+* Personal Portfolio: [Page](https://codepen.io/Myllah/full/zYwrBXb "Personal Portfolio Webpage - myllah") | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage "Build a Personal Portfolio Webpage")
 
+See the whole collection here: [https://www.freecodecamp.org/learn/responsive-web-design/](https://www.freecodecamp.org/learn/responsive-web-design/)
 
 ## Certificate 
 ###### [My perfil on freecodecamp.org](https://www.freecodecamp.org/myllah)
-<!-- ![Certificado](http://?????? "Certificado") -->
+
+[See the Certificate](https://www.freecodecamp.org/certification/myllah/responsive-web-design "Certificate")
